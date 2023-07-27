@@ -4,6 +4,10 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
+html {
+	scrollbar-gutter: stable;
+}
+
 :root {
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
@@ -30,9 +34,12 @@
 	font-display: swap;
 }
 body {
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
 	font-family: 'Atkinson', sans-serif;
-	margin: 0;
-	padding: 0;
+	margin: 10;
+	padding: 10;
 	text-align: left;
 	background: linear-gradient(var(--gray-gradient)) no-repeat;
 	background-size: 100% 600px;
@@ -48,6 +55,26 @@ main {
 	margin: auto;
 	padding: 3em 1em;
 }
+
+.form{
+	display: grid;
+	gap: 1rem;
+	max-width: 32ch;
+	border: 2px solid #222;
+	border-radius: 0.5rem;
+	padding: 1rem;
+}
+
+.form label{
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+input{
+	font: inherit;
+	font-size: 16px;
+}
+
 h1,
 h2,
 h3,
@@ -93,9 +120,7 @@ textarea {
 	width: 100%;
 	font-size: 16px;
 }
-input {
-	font-size: 16px;
-}
+
 table {
 	width: 100%;
 }

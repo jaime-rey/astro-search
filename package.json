@@ -13,6 +13,11 @@
     "@astrojs/mdx": "^0.19.7",
     "@astrojs/rss": "^2.4.3",
     "@astrojs/sitemap": "^2.0.1",
-    "astro": "^2.9.3"
+    "astro": "^2.9.3",
+    "dompurify": "^3.0.5",
+    "fuse.js": "^6.6.2"
+  },
+  "devDependencies": {
+    "@types/dompurify": "^3.0.2"
   }
 }
